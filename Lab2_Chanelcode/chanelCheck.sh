@@ -1,0 +1,1 @@
+./lab2_program_linux_amd64.run -mode=source -phase=$1 | python3 MyCode/ham_io.py -e | ./lab2_program_linux_amd64.run -mode=channel -phase=$1 | python3 MyCode/ham_io.py -d | ./lab2_program_linux_amd64.run -mode=verify -phase=$1
